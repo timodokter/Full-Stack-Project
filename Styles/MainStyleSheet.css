@@ -1,5 +1,6 @@
 * {
     font-family: sans-serif;
+    color: #FFE81F;
 }
 
 html {
@@ -7,23 +8,27 @@ html {
 }
 
 body {
+    height: 100%;
     margin: 0;
+    background-image: url(../images/home_pagina/background.jpg);
+    background-size: 100%;
 }
 
 header {
     background-color: #707070;
-    color: white;
 }
 
-h1 {
+h1.mainPageTitle {
     margin: 0;
     text-align: center;
     font-size: 80px;
+    color: white;
 }
 
 nav {
     display: flex;
     margin: 0 auto;
+    padding-bottom: 10px;
     justify-content: center;
 }
 
@@ -36,3 +41,39 @@ nav a {
     border-right: 2px solid white;
 }
 
+div#MainBody {
+    margin: 10px;
+}
+
+div.HomePageGrid {
+    display: grid;
+    grid-template-areas:
+    'Movies Series Characters';
+    grid-gap: 10px;
+}
+
+p {
+    color: transparent;
+    -webkit-text-stroke: 3px #FFE81F;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+div.MoviesText {
+    grid-area: Movies;
+    text-align: center;
+}
+
+div.SeriesText {
+    grid-area: Series;
+    text-align: center;
+}
+
+div.CharactersText {
+    grid-area: Characters;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}

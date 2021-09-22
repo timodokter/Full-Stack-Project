@@ -10,12 +10,50 @@
 <header>
     <h1 class="mainPageTitle">Star Wars Wiki</h1>
     <nav>
-        <a href="WebPages/movies.php">Movies</a>
-        <a href="WebPages/series.php">Series</a>
-        <a href="WebPages/characters.php">Characters</a>
-        <a href="WebPages/registration.php">Registration</a>
+        <a href="index.php">Home</a>
+        <a href="WebPages/Movies/movies.php">Movies</a>
+        <a href="WebPages/Series/series.php">Series</a>
+        <a href="WebPages/Characters/characters.php">Characters</a>
+        <?php
+        $isLoggedIn = false;
+
+        if($isLoggedIn) {
+            echo '<a href="WebPages/account/profile.php">Profile</a>';
+        } else {
+            echo '<a href="WebPages/account/registration.php">Login / Sign Up</a>';
+        }
+
+        ?>
     </nav>
 </header>
+<div id="MainBody">
+    <div class="HomePageGrid">
+        <div class="MoviesText">
+            <h1>Movies</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum.</p>
+            <img src="images/home_pagina/Movies.jpg" alt="Movies.jpg">
+        </div>
+        <div class="SeriesText">
+            <h1>Series</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum.</p>
+            <img src="images/home_pagina/Series.png" alt="Series.png">
+        </div>
+        <div class="CharactersText">
+            <h1>Characters</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum.</p>
+            <img src="images/home_pagina/Characters.jpg" alt="Character.jpg">
+        </div>
+    </div>
+</div>
 <?php
 
 ?>

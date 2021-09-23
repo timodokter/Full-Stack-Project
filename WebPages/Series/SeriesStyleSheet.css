@@ -1,0 +1,24 @@
+#SeriesMainBody {
+    margin: 10px;
+    display: grid;
+    grid-template-areas: "ANewHope Revenge";
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+#CloneWars {
+    grid-area: ANewHope;
+}
+
+#Rebels {
+    grid-area: Revenge;
+}
+
+#CloneWars, #Rebels {
+    max-width: 90%;
+    align-self: center;
+}
+
+p {
+    text-align: center;
+}

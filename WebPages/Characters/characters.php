@@ -12,9 +12,27 @@
     <h1 class="mainPageTitle">Star Wars Wiki</h1>
     <nav>
         <a href="../../index.php">Home</a>
-        <a href="../../WebPages/Movies/movies.php">Movies</a>
-        <a href="../../WebPages/Series/series.php">Series</a>
-        <a href="../../WebPages/Characters/characters.php">Characters</a>
+        <div class="dropdown">
+            <a href="../../WebPages/Movies/movies.php" class="navButtons">Movies</a>
+            <div class="dropdown-content">
+                <a href="../../WebPages/Movies/DetailPage/ANewHope.php">A New Hope</a>
+                <a href="../../WebPages/Movies/DetailPage/RevengeOfTheSith.php">Revenge Of The Sith</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="../../WebPages/Series/series.php" class="navButtons">Series</a>
+            <div class="dropdown-content">
+                <a href="../../WebPages/Movies/DetailPage/ANewHope.php">A New Hope</a>
+                <a href="../../WebPages/Movies/DetailPage/RevengeOfTheSith.php">Revenge Of The Sith</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="../../WebPages/Characters/characters.php" class="navButtons">Characters</a>
+            <div class="dropdown-content">
+                <a href="../../WebPages/Movies/DetailPage/ANewHope.php">A New Hope</a>
+                <a href="../../WebPages/Movies/DetailPage/RevengeOfTheSith.php">Revenge Of The Sith</a>
+            </div>
+        </div>
         <?php
         $isLoggedIn = false;
 
@@ -30,7 +48,9 @@
 <div id="CharactersMainBody">
     <div id="Obi-Wan_Kenobi">
         <h1>Obi-Wan Kenobi</h1>
+        <a href="DetailPage/Obi-Wan.php">
         <img src="../../images/characters/obi%20wan%20kenobi/obi%20wan%20kenobi.jpg" alt="Obi-Wan Kenobi">
+        </a>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
             galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
@@ -38,7 +58,9 @@
     </div>
     <div id="JarJar">
         <h1>JarJar Binks</h1>
+        <a href="DetailPage/JarJar.php">
         <img src="../../images/characters/jar%20jar/jarjar.jpg" alt="JarJar Binks">
+        </a>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
             galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including

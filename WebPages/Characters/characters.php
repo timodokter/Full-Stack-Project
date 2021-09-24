@@ -27,7 +27,7 @@
         ?>
     </nav>
 </header>
-<div id="SeriesMainBody">
+<div id="CharactersMainBody">
     <div id="Obi-Wan_Kenobi">
         <h1>Obi-Wan Kenobi</h1>
         <img src="../../images/characters/obi%20wan%20kenobi/obi%20wan%20kenobi.jpg" alt="Obi-Wan Kenobi">

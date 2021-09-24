@@ -68,7 +68,6 @@ p {
 
 div.MoviesText {
     grid-area: Movies;
-    text-align: center;
 }
 
 div.SeriesText {

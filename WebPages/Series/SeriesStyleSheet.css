@@ -1,17 +1,17 @@
 #SeriesMainBody {
     margin: 10px;
     display: grid;
-    grid-template-areas: "ANewHope Revenge";
+    grid-template-areas: "CloneWars Rebels";
     grid-gap: 10px;
     justify-items: center;
 }
 
 #CloneWars {
-    grid-area: ANewHope;
+    grid-area: CloneWars;
 }
 
 #Rebels {
-    grid-area: Revenge;
+    grid-area: Rebels;
 }
 
 #CloneWars, #Rebels {

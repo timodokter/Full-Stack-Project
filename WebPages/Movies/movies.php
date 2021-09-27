@@ -36,7 +36,7 @@
         <?php
         $isLoggedIn = false;
 
-        if($isLoggedIn) {
+        if ($isLoggedIn) {
             echo '<a href="../../WebPages/account/profile.php">Profile</a>';
         } else {
             echo '<a href="../../WebPages/account/registration.php">Login / Sign Up</a>';
@@ -45,30 +45,29 @@
         ?>
     </nav>
 </header>
-<div id="subMainBody">
-    <div id="ANewHope" class="gridItems leftGrid">
-        <h1>A NEW HOPE</h1>
-        <a href="DetailPage/ANewHope.php">
-        <img src="../../images/movies/A%20new%20hope/anewhope.jpg" alt="A New Hope">
-        </a>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.</p>
-    </div>
-    <div id="Revenge"  class="gridItems rightGrid">
-        <h1>REVENGE OF THE SITH</h1>
-        <a href="DetailPage/RevengeOfTheSith.php">
-        <img src="../../images/movies/revenge%20of%20the%20sith/revengeofthesith.jpg" alt="Revenge Of The Sith iamge">
-        </a>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.</p>
+<div id="MainBody">
+    <div id="SubGrid">
+        <div>
+            <h1>A NEW HOPE</h1>
+            <a href="DetailPage/ANewHope.php">
+                <img src="../../images/movies/A%20new%20hope/anewhope.jpg" alt="A New Hope">
+            </a>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum.</p>
+        </div>
+        <div>
+            <h1>REVENGE OF THE SITH</h1>
+            <a href="DetailPage/RevengeOfTheSith.php">
+                <img src="../../images/movies/revenge%20of%20the%20sith/revengeofthesith.jpg" alt="Revenge Of The Sith iamge">
+            </a>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum.</p>
+        </div>
     </div>
 </div>
-<?php
-
-?>
 </body>
 </html>

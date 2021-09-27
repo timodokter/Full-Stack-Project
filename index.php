@@ -21,15 +21,15 @@
         <div class="dropdown">
             <a href="WebPages/Series/series.php" class="navButtons">Series</a>
             <div class="dropdown-content">
-                <a href="WebPages/Movies/DetailPage/ANewHope.php">A New Hope</a>
-                <a href="WebPages/Movies/DetailPage/RevengeOfTheSith.php">Revenge Of The Sith</a>
+                <a href="WebPages/Series/DetailPage/CloneWars.php">The Clone Wars</a>
+                <a href="WebPages/Series/DetailPage/Rebels.php">Rebels</a>
             </div>
         </div>
         <div class="dropdown">
             <a href="WebPages/Characters/characters.php" class="navButtons">Characters</a>
             <div class="dropdown-content">
-                <a href="WebPages/Movies/DetailPage/ANewHope.php">A New Hope</a>
-                <a href="WebPages/Movies/DetailPage/RevengeOfTheSith.php">Revenge Of The Sith</a>
+                <a href="WebPages/Characters/DetailPage/Obi-Wan.php">Obi-Wan Kenobi</a>
+                <a href="WebPages/Characters/DetailPage/JarJar.php">JarJar Binks</a>
             </div>
         </div>
         <?php

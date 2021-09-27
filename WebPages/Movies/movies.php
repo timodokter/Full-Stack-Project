@@ -4,7 +4,7 @@
     <title>Movies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../Styles/MainStyleSheet.css?" rel="stylesheet" type="text/css">
-    <link href="MoviesStyleSheet.css?" rel="stylesheet" type="text/css">
+    <link href="../../Styles/SubStyleSheet.css?" rel="stylesheet" type="text/css">
     <link href="../../images/lightsaber%20icon.png" type="image/icon" rel="icon">
 </head>
 <body>
@@ -22,15 +22,15 @@
         <div class="dropdown">
             <a href="../../WebPages/Series/series.php" class="navButtons">Series</a>
             <div class="dropdown-content">
-                <a href="../../WebPages/Movies/DetailPage/ANewHope.php">A New Hope</a>
-                <a href="../../WebPages/Movies/DetailPage/RevengeOfTheSith.php">Revenge Of The Sith</a>
+                <a href="../../WebPages/Series/DetailPage/CloneWars.php">The Clone Wars</a>
+                <a href="../../WebPages/Series/DetailPage/Rebels.php">Rebels</a>
             </div>
         </div>
         <div class="dropdown">
             <a href="../../WebPages/Characters/characters.php" class="navButtons">Characters</a>
             <div class="dropdown-content">
-                <a href="../../WebPages/Movies/DetailPage/ANewHope.php">A New Hope</a>
-                <a href="../../WebPages/Movies/DetailPage/RevengeOfTheSith.php">Revenge Of The Sith</a>
+                <a href="../../WebPages/Characters/DetailPage/Obi-Wan.php">Obi-Wan Kenobi</a>
+                <a href="../../WebPages/Characters/DetailPage/JarJar.php">JarJar Binks</a>
             </div>
         </div>
         <?php
@@ -45,8 +45,8 @@
         ?>
     </nav>
 </header>
-<div id="MoviesMainBody">
-    <div id="ANewHope">
+<div id="subMainBody">
+    <div id="ANewHope" class="gridItems leftGrid">
         <h1>A NEW HOPE</h1>
         <a href="DetailPage/ANewHope.php">
         <img src="../../images/movies/A%20new%20hope/anewhope.jpg" alt="A New Hope">
@@ -56,7 +56,7 @@
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
             versions of Lorem Ipsum.</p>
     </div>
-    <div id="Revenge">
+    <div id="Revenge"  class="gridItems rightGrid">
         <h1>REVENGE OF THE SITH</h1>
         <a href="DetailPage/RevengeOfTheSith.php">
         <img src="../../images/movies/revenge%20of%20the%20sith/revengeofthesith.jpg" alt="Revenge Of The Sith iamge">

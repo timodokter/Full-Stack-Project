@@ -1,0 +1,19 @@
+#subMainBody {
+    margin: 10px;
+    display: grid;
+    grid-template-areas: "leftGrid rightGrid";
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.leftGrid {
+    grid-area: leftGrid;
+}
+
+.rightGrid {
+    grid-area: rightGrid;
+}
+
+p {
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+#detailMainBody {
+    margin: 10px;
+}
+
+#CharactersDetailGrid {
+    display: grid;
+    grid-template-areas:
+            "Bio personality"
+            "Skills BehindTheScenes";
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.Bio {
+    grid-area: Bio;
+}
+
+.Personality {
+    grid-area: personality;
+}
+
+.Skills {
+    grid-area: Skills;
+}
+
+.BehindTheScenes {
+    grid-area: BehindTheScenes;
+}

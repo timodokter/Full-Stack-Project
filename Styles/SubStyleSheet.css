@@ -1,11 +1,15 @@
+/*the grid*/
 #subGrid {
     display: grid;
     grid-template: auto / minmax(0, 1fr) minmax(0, 1fr);
     grid-gap: 20px;
 }
+/*the grid*/
 
+/*responsivnes*/
 @media(max-width: 1200px) {
     #SubGrid {
         grid-template: auto / minmax(0, 1fr);
     }
 }
+/*responsivnes*/

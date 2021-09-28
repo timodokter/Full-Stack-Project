@@ -33,6 +33,7 @@
             </div>
         </div>
         <div>
+            <!--            this php piece checks to see if you are logged in or not-->
             <?php
             $isLoggedIn = false;
 

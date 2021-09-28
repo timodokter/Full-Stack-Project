@@ -13,3 +13,9 @@
 p {
     text-align: center;
 }
+
+@media(max-width: 1200px) {
+    #DetailGrid {
+        grid-template: auto / minmax(0, 1fr);
+    }
+}

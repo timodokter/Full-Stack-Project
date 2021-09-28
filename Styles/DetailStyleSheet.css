@@ -15,13 +15,15 @@
 p {
     text-align: center;
 }
+
 /*section items*/
 /*the grid*/
 
 /*responsivnes*/
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
     #DetailGrid {
         grid-template: auto / minmax(0, 1fr);
     }
 }
+
 /*responsivnes*/

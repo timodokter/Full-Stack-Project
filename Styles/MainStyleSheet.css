@@ -81,6 +81,7 @@ nav a {
 .dropdown:hover .navButtons {
     background-color: #828282;
 }
+
 /*dropdown on navbar*/
 /*navbar*/
 /*header*/
@@ -129,6 +130,7 @@ img {
     font-weight: bold;
     margin: 20px 0;
 }
+
 /*the grid*/
 /*section items*/
 /*mainbody*/
@@ -150,6 +152,7 @@ img {
         grid-template: auto / minmax(0, 1fr);
     }
 }
+
 /*responsivnes*/
 
 /*scrollbar*/
@@ -166,4 +169,5 @@ img {
     background: #525252;
     border-radius: 100px;
 }
+
 /*scrollbar*/

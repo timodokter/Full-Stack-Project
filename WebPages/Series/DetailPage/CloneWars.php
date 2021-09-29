@@ -40,9 +40,9 @@
             $isLoggedIn = false;
 
             if ($isLoggedIn) {
-                echo '<a href="../../../WebPages/account/profile.php" class="navlinks">Profile</a>';
+                echo '<a href="../../../WebPages/account/Profile/profile.php" class="navlinks">Profile</a>';
             } else {
-                echo '<a href="../../../WebPages/account/registration.php" class="navlinks">Login / Sign Up</a>';
+                echo '<a href="../../../WebPages/account/login_signup/registration.php" class="navlinks">Login / Sign Up</a>';
             }
 
             ?>
@@ -52,34 +52,34 @@
 <div id="MainBody">
     <h1 class="detailTitle">The Clone Wars</h1>
     <div id="DetailGrid">
-        <div>
+        <div class="content">
             <h2 class="paragraphTitle">DEVELOPMENT</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
                 versions of Lorem Ipsum.</p>
         </div>
-        <div>
+        <div class="content">
             <img src="../../../images/series/clone%20wars/theclonewars.jpg">
         </div>
-        <div>
+        <div class="content">
             <h2 class="paragraphTitle">RELEASE</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
                 versions of Lorem Ipsum.</p>
         </div>
-        <div>
+        <div class="content">
             <h2 class="paragraphTitle">RECEPTION</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
                 versions of Lorem Ipsum.</p>
         </div>
-        <div>
+        <div class="content">
             <img src="../../../images/series/clone%20wars/theCloneWarsSeason1.jpg">
         </div>
-        <div>
+        <div class="content">
             <h2 class="paragraphTitle">CONTINUITY</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                 galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.

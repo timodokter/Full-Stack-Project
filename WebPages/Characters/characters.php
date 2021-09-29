@@ -39,9 +39,9 @@
             $isLoggedIn = false;
 
             if ($isLoggedIn) {
-                echo '<a href="../../WebPages/account/profile.php" class="navlinks">Profile</a>';
+                echo '<a href="../../WebPages/account/Profile/profile.php" class="navlinks">Profile</a>';
             } else {
-                echo '<a href="../../WebPages/account/registration.php" class="navlinks">Login / Sign Up</a>';
+                echo '<a href="../../WebPages/account/login_signup/registration.php" class="navlinks">Login / Sign Up</a>';
             }
 
             ?>
@@ -50,7 +50,7 @@
 </header>
 <div id="MainBody">
     <div id="subGrid">
-        <div id="Obi-Wan_Kenobi" class="gridItems leftGrid">
+        <div class="content">
             <h1>Obi-Wan Kenobi</h1>
             <a href="DetailPage/Obi-Wan.php">
                 <img src="../../images/characters/obi%20wan%20kenobi/obi%20wan%20kenobi.jpg" alt="Obi-Wan Kenobi">
@@ -60,7 +60,7 @@
                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
                 versions of Lorem Ipsum.</p>
         </div>
-        <div id="JarJar" class="gridItems rightGrid">
+        <div class="content">
             <h1>JarJar Binks</h1>
             <a href="DetailPage/JarJar.php">
                 <img src="../../images/characters/jar%20jar/jarjar.jpg" alt="JarJar Binks">

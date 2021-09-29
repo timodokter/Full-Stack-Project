@@ -13,11 +13,13 @@
 #bio {
     grid-column-start: 1;
     grid-row: 1 / span 2;
-    background-color: rgba(82, 82, 82, 0.5);
 }
 
 #accountInfo {
     grid-column-start: 2;
     grid-row: 1 / span 1;
-    background-color: rgba(82, 82, 82, 0.5);
+}
+
+#description {
+    font-size: 14px;
 }

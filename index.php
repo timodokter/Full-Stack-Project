@@ -38,9 +38,9 @@
             $isLoggedIn = false;
 
             if ($isLoggedIn) {
-                echo '<a href="WebPages/account/profile.php" class="navlinks">Profile</a>';
+                echo '<a href="WebPages/account/Profile/profile.php" class="navlinks">Profile</a>';
             } else {
-                echo '<a href="WebPages/account/registration.php" class="navlinks">Login / Sign Up</a>';
+                echo '<a href="WebPages/account/login_signup/registration.php" class="navlinks">Login / Sign Up</a>';
             }
 
             ?>

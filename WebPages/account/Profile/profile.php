@@ -51,7 +51,7 @@
 <div id="profileBody">
     <div id="profileGrid">
         <div id="bio">
-            <div class="content">
+            <div class="content" id="accountbio">
                 <img src="../../../images/default-placeholder.png" alt="profilePicture">
                 <h3>Username-placeholder</h3>
                 <p id="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
@@ -59,13 +59,42 @@
         </div>
         <div id="accountInfo">
             <div class="content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                    galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum.</p>
+                <div id="short_data">
+                    <div class="accountData">
+                        <h3 class="dataName">Username: </h3>
+                        <h3 class="userData">Placeholder</h3>
+                    </div>
+                    <div class="accountData">
+                        <h3 class="dataName">Initials: </h3>
+                        <h3 class="userData">placeholder</h3>
+                    </div>
+                    <div class="accountData">
+                        <h3 class="dataName">Password: </h3>
+                        <div>
+                            <input class="userData" id="password" typeof="password" readonly value="placeholder">
+                            <button class="togglePassword" onclick="togglePassword()"><img src="../../../images/toggle_password.png" style="max-width: 20px"></button>
+                        </div>
+                    </div>
+                    <div class="accountData">
+                        <h3 class="dataName">Full name: </h3>
+                        <h3 class="userData">placeholder</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+
+    function togglePassword() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+
+</script>
 </body>
 </html>

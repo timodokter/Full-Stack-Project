@@ -89,7 +89,7 @@ nav a {
 /*mainbody*/
 div#MainBody {
     width: 95%;
-    margin: 10px auto;
+    margin: 10px auto 0 auto;
     padding-bottom: 30px;
 }
 

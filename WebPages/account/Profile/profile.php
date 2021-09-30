@@ -52,38 +52,75 @@
     <div id="profileGrid">
         <div id="bio">
             <div class="content" id="accountbio">
-                <img src="../../../images/default-placeholder.png" alt="profilePicture">
+                <img src="../../../images/default-placeholder.png" alt="profilePicture" style="border-radius: 150px">
                 <h3>Username-placeholder</h3>
+                <h4>BirthDate:</h4>
+                <p id="date">15-12-1977</p>
                 <p id="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
             </div>
         </div>
         <div id="accountInfo">
             <div class="content">
-                <div id="short_data">
+                <div class="short_data">
                     <div class="accountData">
                         <h3 class="dataName">Username: </h3>
                         <h3 class="userData">Placeholder</h3>
                     </div>
                     <div class="accountData">
                         <h3 class="dataName">Initials: </h3>
-                        <h3 class="userData">placeholder</h3>
+                        <h3 class="userData">Placeholder</h3>
                     </div>
                     <div class="accountData">
-                        <h3 class="dataName">Password: </h3>
                         <div>
-                            <input class="userData" id="password" typeof="password" readonly value="placeholder">
-                            <button class="togglePassword" onclick="togglePassword()"><img src="../../../images/toggle_password.png" style="max-width: 20px"></button>
+                            <h3 class="dataName, passwordLabel">Password: </h3>
+                        </div>
+                        <div class="passwordGroup">
+                            <input class="userData" id="password" type="password" readonly value="Placeholder">
+                            <button class="togglePassword" onclick="togglePassword()"><img src="../../../images/toggle_password.png" alt="eye for password"></button>
                         </div>
                     </div>
                     <div class="accountData">
                         <h3 class="dataName">Full name: </h3>
-                        <h3 class="userData">placeholder</h3>
+                        <h3 class="userData">Placeholder</h3>
+                    </div>
+                </div>
+                <div id="long_data">
+                    <div class="accountData">
+                        <h3 class="dataName">Email:</h3>
+                        <h3 class="userData">Placeholder@Placeholder.com</h3>
+                    </div>
+                </div>
+                <div class="short_data">
+                    <div class="accountData">
+                        <h3 class="dataName">Favorite Character:</h3>
+                        <h3 class="userData">Placeholder</h3>
+                    </div>
+                    <div class="accountData">
+                        <h3 class="dataName">Favorite Movie:</h3>
+                        <h3 class="userData">Placeholder</h3>
+                    </div>
+                    <div class="accountData">
+                        <h3 class="dataName">Favorite Serie:</h3>
+                        <h3 class="userData">Placeholder</h3>
+                    </div>
+                    <div class="accountData">
+                        <h3 class="dataName">Favorite Fight:</h3>
+                        <h3 class="dataName">Placeholder</h3>
+                    </div>
+                    <div class="accountData">
+                        <h3 class="dataName">Favorite Jedi:</h3>
+                        <h3 class="dataName">Placeholder</h3>
+                    </div>
+                    <div class="accountData">
+                        <h3 class="dataName">Favorite Sith:</h3>
+                        <h3 class="dataName">Placeholder</h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <script>
 
     function togglePassword() {

@@ -4,6 +4,7 @@
     <title>Login / Sign Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../../Styles/MainStyleSheet.css?" rel="stylesheet" type="text/css">
+    <link href="registrationStyleSheet.css" rel="stylesheet" type="text/css">
     <link href="/images/lightsaber%20icon.png" type="image/icon" rel="icon">
 </head>
 <body>
@@ -47,5 +48,60 @@
         </div>
     </nav>
 </header>
+<div id="MainBody">
+    <div id="registrationGrid">
+        <div id="login">
+            <h1>Login</h1>
+            <div id="loginGrid">
+                <h3>Email or Username:</h3>
+                <input type="text" placeholder="Email or Username" required>
+                <h3>Password:</h3>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button>Login</button>
+        </div>
+        <div id="signup">
+            <h1>Registration</h1>
+            <div id="signupGrid">
+                <h3>Username:</h3>
+                <input type="text" placeholder="Your Username" required>
+
+                <h3>Initials:</h3>
+                <input type="text" placeholder="Your Initials" required>
+
+                <h3>Password:</h3>
+                <input type="text" placeholder="Your Password" required>
+
+                <h3>Confirm Password:</h3>
+                <input type="text" placeholder="Confirm Your Password" required>
+
+                <h3>Fullname:</h3>
+                <input type="text" placeholder="Your First And First Name" required>
+
+                <h3>Email:</h3>
+                <input type="text" placeholder="Your Email Address" required>
+
+                <h3>Favorite Character:</h3>
+                <input type="text" placeholder="Your Favorite Character">
+
+                <h3>Favorite Movie:</h3>
+                <input type="text" placeholder="Your Favorite Movie">
+
+                <h3>Favorite Serie:</h3>
+                <input type="text" placeholder="Your Favorite Serie">
+
+                <h3>Favorite Fight:</h3>
+                <input type="text" placeholder="Your Favorite Fight">
+
+                <h3>Favorite Jedi:</h3>
+                <input type="text" placeholder="Your Favorite Jedi">
+
+                <h3>Favorite Sith:</h3>
+                <input type="text" placeholder="Your Favorite Sith">
+            </div>
+            <button>Sign up</button>
+        </div>
+    </div>
+</div>
 </body>
 </html>

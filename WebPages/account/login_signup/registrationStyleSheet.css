@@ -1,0 +1,45 @@
+#registrationGrid {
+    display: grid;
+    grid-template: auto / 1fr 2fr;
+    grid-gap: 20px;
+}
+
+#login, #signup {
+    padding: 10px;
+    border: 3px solid #707070;
+    border-radius: 15px;
+    background-color: rgba(82, 82, 82, 0.5);
+}
+
+#loginGrid {
+    display: grid;
+    grid-template: auto / 1fr 1.5fr;
+    grid-gap: 20px;
+}
+
+#signup {
+    grid-row: 1 / span 2;
+    grid-column-start: 2;
+}
+
+#signupGrid {
+    display: grid;
+    grid-template: auto / 1fr 3fr;
+    grid-gap: 20px;
+}
+
+input {
+    font-size: 20px;
+    background-color: black;
+}
+
+button {
+    padding: 10px;
+    margin: 20px;
+    background-color: black;
+    font-size: 20px;
+}
+
+h3 {
+    margin: 10px auto;
+}

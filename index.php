@@ -7,6 +7,16 @@
     <link href="images/lightsaber%20icon.png" type="image/icon" rel="icon">
 </head>
 <body>
+<?
+include "PHP/Connectpage.php";
+
+$conn = OpenConn();
+
+$conn->query("SELECT * FROM `accountinformation` WHERE 1");
+
+CloseConn($conn);
+
+?>
 <header>
     <h1 class="mainPageTitle">Star Wars Wiki</h1>
     <nav>

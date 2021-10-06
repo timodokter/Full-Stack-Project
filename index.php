@@ -7,14 +7,18 @@
     <link href="images/lightsaber%20icon.png" type="image/icon" rel="icon">
 </head>
 <body>
-<?
-include "PHP/Connectpage.php";
+<?php
+require("PHP/Connectpage.php");
 
 $conn = OpenConn();
 
-$conn->query("SELECT * FROM `accountinformation` WHERE 1");
+//$all = $conn->query("SELECT * FROM `accountinformation`");
+//
+//while($row = $all->fetch()) {
+//    echo $row["Email"];
+//}
 
-CloseConn($conn);
+
 
 ?>
 <header>
@@ -92,4 +96,7 @@ CloseConn($conn);
     </div>
 </div>
 </body>
+<?
+CloseConn($conn);
+?>
 </html>

@@ -52,13 +52,15 @@
     <div id="registrationGrid">
         <div id="login">
             <h1>Login</h1>
-            <div id="loginGrid">
+            <form name="f1" action="" id="loginForm" onsubmit="return validation()" method="post">
+                <div id="loginGrid">
                 <h3>Email or Username:</h3>
-                <input type="text" placeholder="Email or Username" required>
+                <input type="text" placeholder="Email or Username" required id="user" name="user">
                 <h3>Password:</h3>
-                <input type="password" placeholder="Password" required>
-            </div>
-            <button>Login</button>
+                <input type="password" placeholder="Password" required id="pass" name="pass">
+                </div>
+                <input type="submit" id="btn" value="Login">
+            </form>
         </div>
         <div id="signup">
             <h1>Registration</h1>
@@ -103,5 +105,27 @@
         </div>
     </div>
 </div>
+<script>
+    function validation()
+    {
+        var id=document.f1.user.value;
+        var ps=document.f1.pass.value;
+        if(id.length=="" && ps.length=="") {
+            alert("User Name and Password fields are empty");
+            return false;
+        }
+        else
+        {
+            if(id.length=="") {
+                alert("User Name is empty");
+                return false;
+            }
+            if (ps.length=="") {
+                alert("Password field is empty");
+                return false;
+            }
+        }
+    }
+</script>
 </body>
 </html>

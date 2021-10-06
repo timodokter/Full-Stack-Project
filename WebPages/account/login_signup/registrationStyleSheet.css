@@ -33,7 +33,7 @@ input {
     background-color: black;
 }
 
-button {
+input#btn {
     padding: 10px;
     margin: 20px;
     background-color: black;

@@ -8,7 +8,8 @@
 </head>
 <body>
 <?php
-require("PHP/Connectpage.php");
+
+require("PHP/ConnectDB.php");
 
 $conn = OpenConn();
 
@@ -17,8 +18,6 @@ $conn = OpenConn();
 //while($row = $all->fetch()) {
 //    echo $row["Email"];
 //}
-
-
 
 ?>
 <header>

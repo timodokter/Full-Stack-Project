@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 function OpenConn()
 {
@@ -12,9 +13,9 @@ function OpenConn()
     try {
         $conn = new PDO("mysql:host=" . $servername . ";dbname=" . $database . ";port=" . $port, $username, $password);
         // set the PDO error mode to exception
-        console.log("Connected successfully");
+        echo "<script>console.log('Connected succefully')</script>";
     } catch (PDOException $e) {
-        console.log("Connection failed: " . $e->getMessage());
+        echo "<script>console.log'Connection failed: " . $e->getMessage() . "')</script>";
     }
 
     return $conn;

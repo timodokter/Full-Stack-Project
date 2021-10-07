@@ -8,6 +8,10 @@
     <link href="../../images/lightsaber%20icon.png" type="image/icon" rel="icon">
 </head>
 <body>
+<?php
+require "../../PHP/ConnectDB.php";
+$_SESSION["conn"] = OpenConn();
+?>
 <header>
     <h1 class="mainPageTitle">Star Wars Wiki</h1>
     <nav>
@@ -36,10 +40,9 @@
         <div>
             <!--            this php piece checks to see if you are logged in or not-->
             <?php
-            $isLoggedIn = false;
 
-            if ($isLoggedIn) {
-                echo '<a href="../../WebPages/account/Profile/profile.php" class="navlinks">Profile</a>';
+            if ($_SESSION["LoggedIN"]) {
+                echo '<a href="../account/Profile/profile.php" class="navlinks">Profile</a>';
             } else {
                 echo '<a href="../../WebPages/account/login_signup/registration.php" class="navlinks">Login / Sign Up</a>';
             }

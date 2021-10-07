@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,16 +9,14 @@
 </head>
 <body>
 <?php
-
-require("PHP/ConnectDB.php");
-
+require "PHP/ConnectDB.php";
 $conn = OpenConn();
 
-//$all = $conn->query("SELECT * FROM `accountinformation`");
-//
-//while($row = $all->fetch()) {
-//    echo $row["Email"];
-//}
+$all = $conn->query("SELECT * FROM accountinformation");
+
+while($row = $all->fetch()) {
+    echo $row["Email"];
+}
 
 ?>
 <header>
@@ -48,9 +47,8 @@ $conn = OpenConn();
         <div>
             <!--            this php piece checks to see if you are logged in or not-->
             <?php
-            $isLoggedIn = false;
 
-            if ($isLoggedIn) {
+            if ($_SESSION["LoggedIn"]) {
                 echo '<a href="WebPages/account/Profile/profile.php" class="navlinks">Profile</a>';
             } else {
                 echo '<a href="WebPages/account/login_signup/registration.php" class="navlinks">Login / Sign Up</a>';
@@ -95,7 +93,7 @@ $conn = OpenConn();
     </div>
 </div>
 </body>
-<?
+<?php
 CloseConn($conn);
 ?>
 </html>

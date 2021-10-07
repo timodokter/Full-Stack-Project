@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../../Styles/MainStyleSheet.css?" rel="stylesheet" type="text/css">
     <link href="profileStyleSheet.css" rel="stylesheet" type="text/css">
-    <link href="/images/lightsaber%20icon.png" type="image/icon" rel="icon">
+    <link href="../../../images/lightsaber%20icon.png" type="image/icon" rel="icon">
 </head>
 <body>
+<?php
+require "../../../PHP/ConnectDB.php";
+$conn = OpenConn();
+
+$all = $conn->query("SELECT * FROM accountinformation");
+
+while($row = $all->fetch()) {
+    echo $row["Email"];
+}
+
+?>
 <header>
     <h1 class="mainPageTitle">Star Wars Wiki</h1>
     <nav>
@@ -36,12 +48,11 @@
         <div>
             <!--            this php piece checks to see if you are logged in or not-->
             <?php
-            $isLoggedIn = true;
 
-            if ($isLoggedIn) {
+            if ($_SESSION["LoggedIn"]) {
                 echo '<a href="profile.php" class="navlinks">Profile</a>';
             } else {
-                echo '<a href="../../../WebPages/account/login_signup/registration.php" class="navlinks">Login / Sign Up</a>';
+                echo '<a href="../login_signup/registration.php" class="navlinks">Login / Sign Up</a>';
             }
 
             ?>
@@ -120,7 +131,6 @@
         </div>
     </div>
 </div>
-
 <script>
 
     function togglePassword() {
@@ -134,4 +144,7 @@
 
 </script>
 </body>
+<?php
+CloseConn($conn);
+?>
 </html>

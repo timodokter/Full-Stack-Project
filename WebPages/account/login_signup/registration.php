@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,9 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../../Styles/MainStyleSheet.css?" rel="stylesheet" type="text/css">
     <link href="registrationStyleSheet.css" rel="stylesheet" type="text/css">
-    <link href="/images/lightsaber%20icon.png" type="image/icon" rel="icon">
+    <link href="../../../images/lightsaber%20icon.png" type="image/icon" rel="icon">
 </head>
 <body>
+<?PHP
+require "../../../PHP/ConnectDB.php";
+
+$all = $_SESSION["conn"]->query("SELECT * FROM accountinformation");
+
+while($row = $all->fetch()) {
+    echo $row["Email"];
+}
+?>
 <header>
     <h1 class="mainPageTitle">Star Wars Wiki</h1>
     <nav>
@@ -36,10 +49,9 @@
         <div>
             <!--            this php piece checks to see if you are logged in or not-->
             <?php
-            $isLoggedIn = false;
 
-            if ($isLoggedIn) {
-                echo '<a href="../../../WebPages/account/Profile/profile.php" class="navlinks">Profile</a>';
+            if ($_SESSION["LoggedIn"]) {
+                echo '<a href="../Profile/profile.php" class="navlinks">Profile</a>';
             } else {
                 echo '<a href="registration.php" class="navlinks">Login / Sign Up</a>';
             }

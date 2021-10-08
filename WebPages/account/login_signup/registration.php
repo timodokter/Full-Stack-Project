@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,11 +13,11 @@ session_start();
 require "../../../PHP/ConnectDB.php";
 $conn = OpenConn();
 
-$all = $conn->query("SELECT * FROM accountinformation");
-
-while($row = $all->fetch()) {
-    echo $row["Email"];
-}
+//$all = $conn->query("SELECT * FROM accountinformation");
+//
+//while($row = $all->fetch()) {
+//    echo $row["Email"];
+//}
 ?>
 <header>
     <h1 class="mainPageTitle">Star Wars Wiki</h1>

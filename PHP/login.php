@@ -1,8 +1,3 @@
-<?php
-require_once "PHP/ConnectDB.php";
-require_once "getData.php";
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,13 +10,14 @@ require_once "getData.php";
 </head>
 <body>
 <?php
+require_once "PHP/ConnectDB.php";
+require_once "getData.php";
+
 $conn = OpenConn();
-//$usedName = $_POST["user"];
-$usedName = "tdokter@roc-dev.com";
+$usedName = $_POST["user"];
+//$usedName = "tdokter@roc-dev.com";
 
 $_SESSION["LoggedIn"] = true;
-//$_SESSION["SelectEmail"] = $conn->query($getEmail)->fetch();
-//print_r($_SESSION["SelectEmail"]["Email"]);
 ?>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-function OpenConn()
+function OpenConn(): PDO
 {
     $servername = "localhost";
     $username = "root";

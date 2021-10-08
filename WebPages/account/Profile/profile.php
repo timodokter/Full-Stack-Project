@@ -11,13 +11,14 @@
 <body>
 <?php
 require "../../../PHP/ConnectDB.php";
+require_once "../../../PHP/getData.php";
 $conn = OpenConn();
 
-$all = $conn->query("SELECT * FROM accountinformation");
-
-while($row = $all->fetch()) {
-    echo $row["Email"];
-}
+//$all = $conn->query("SELECT * FROM accountinformation");
+//
+//while($row = $all->fetch()) {
+//    echo $row["Email"];
+//}
 
 ?>
 <header>

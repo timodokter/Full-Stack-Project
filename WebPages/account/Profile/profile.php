@@ -10,8 +10,12 @@
 </head>
 <body>
 <?php
-require "../../../PHP/ConnectDB.php";
-require_once "../../../PHP/getData.php";
+//require_once "../../../PHP/ConnectDB.php";
+//require_once "../../../PHP/getData.php";
+include_once "../../../PHP/ConnectDB.php";
+include_once "../../../PHP/getData.php";
+//$check = file_exists("../../../PHP/getData.php");
+//echo $check;
 $conn = OpenConn();
 
 //$all = $conn->query("SELECT * FROM accountinformation");
@@ -19,6 +23,8 @@ $conn = OpenConn();
 //while($row = $all->fetch()) {
 //    echo $row["Email"];
 //}
+
+echo $conn->query(getUsername($_SESSION["usedName"]))
 
 ?>
 <header>

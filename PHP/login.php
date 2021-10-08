@@ -10,11 +10,12 @@
 </head>
 <body>
 <?php
-require_once "PHP/ConnectDB.php";
+//require_once "PHP/ConnectDB.php";
 require_once "getData.php";
 
 $conn = OpenConn();
-$usedName = $_POST["user"];
+//$usedName = $_POST["user"];
+$_SESSION["usedName"] = $_POST["user"];
 //$usedName = "tdokter@roc-dev.com";
 
 $_SESSION["LoggedIn"] = true;

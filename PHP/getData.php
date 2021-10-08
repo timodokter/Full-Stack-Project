@@ -1,5 +1,5 @@
 <?php
-require "PHP/ConnectDB.php";
+//require "PHP/ConnectDB.php";
 $conn = OpenConn();
 
 function getEmail($usedName) {
@@ -13,7 +13,7 @@ function getUsername($usedName) {
     global $conn;
 
     $getUsername = "SELECT Username FROM accountinformation where Email or Username = '$usedName'";
-    return $conn->query($getUsername);
+    return $getUsername;
 }
 
 function getInitials($usedName) {

@@ -1,8 +1,7 @@
 <?php
-session_start();
+require_once "PHP/ConnectDB.php";
+require_once "getData.php";
 
-require_once "ConnectDB.php";
-$conn = OpenConn();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,11 +11,13 @@ $conn = OpenConn();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh"
           content="0; url = ../WebPages/account/Profile/profile.php">
+    <link href="../images/lightsaber%20icon.png" type="image/icon" rel="icon">
 </head>
 <body>
 <?php
-$usedName = $_POST["user"];
-$getEmail = "SELECT Email FROM accountinformation where Email or Username = '$usedName'";
+$conn = OpenConn();
+//$usedName = $_POST["user"];
+$usedName = "tdokter@roc-dev.com";
 
 $_SESSION["LoggedIn"] = true;
 //$_SESSION["SelectEmail"] = $conn->query($getEmail)->fetch();

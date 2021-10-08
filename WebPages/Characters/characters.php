@@ -11,6 +11,7 @@
 <?php
 require "../../PHP/ConnectDB.php";
 $_SESSION["conn"] = OpenConn();
+
 ?>
 <header>
     <h1 class="mainPageTitle">Star Wars Wiki</h1>

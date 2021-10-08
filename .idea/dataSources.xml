@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="MySQL - starwarswikidb@localhost" uuid="8fb415d5-cd42-4dbc-b82e-c110dc35695f">
+    <data-source source="LOCAL" name="starwarswikidb@localhost" uuid="bc1b4f1d-ade2-4274-8b2e-097a8cd42581">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>

@@ -14,8 +14,9 @@ session_start();
 <body>
 <?PHP
 require "../../../PHP/ConnectDB.php";
+$conn = OpenConn();
 
-$all = $_SESSION["conn"]->query("SELECT * FROM accountinformation");
+$all = $conn->query("SELECT * FROM accountinformation");
 
 while($row = $all->fetch()) {
     echo $row["Email"];
@@ -64,7 +65,7 @@ while($row = $all->fetch()) {
     <div id="registrationGrid">
         <div id="login">
             <h1>Login</h1>
-            <form name="f1" action="" id="loginForm" onsubmit="return validation()" method="post">
+            <form name="f1" action="../../../PHP/login.php" id="loginForm" onsubmit="return validation()" method="post">
                 <div id="loginGrid">
                 <h3>Email or Username:</h3>
                 <input type="text" placeholder="Email or Username" required id="user" name="user">

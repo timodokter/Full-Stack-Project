@@ -41,8 +41,7 @@ $_SESSION["conn"] = OpenConn();
         <div>
             <!--            this php piece checks to see if you are logged in or not-->
             <?php
-
-            if ($_SESSION["LoggedIN"]) {
+            if (isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]) {
                 echo '<a href="../account/Profile/profile.php" class="navlinks">Profile</a>';
             } else {
                 echo '<a href="../../WebPages/account/login_signup/registration.php" class="navlinks">Login / Sign Up</a>';

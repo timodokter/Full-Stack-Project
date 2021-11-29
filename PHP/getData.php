@@ -85,3 +85,5 @@ function getSith($usedName) {
     $getSith = "SELECT Sith FROM accountinformation where Email or Username = '$usedName'";
     return $conn->query($getSith);
 }
+
+CloseConn($conn);

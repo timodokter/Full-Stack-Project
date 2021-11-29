@@ -10,12 +10,8 @@
 </head>
 <body>
 <?php
-//require_once "../../../PHP/ConnectDB.php";
-//require_once "../../../PHP/getData.php";
-include_once "../../../PHP/ConnectDB.php";
-include_once "../../../PHP/getData.php";
-//$check = file_exists("../../../PHP/getData.php");
-//echo $check;
+require_once "../../../PHP/ConnectDB.php";
+require_once "../../../PHP/getData.php";
 $conn = OpenConn();
 
 //$all = $conn->query("SELECT * FROM accountinformation");
@@ -56,7 +52,7 @@ echo $conn->query(getUsername($_SESSION["usedName"]))
             <!--            this php piece checks to see if you are logged in or not-->
             <?php
 
-            if ($_SESSION["LoggedIn"]) {
+            if (isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]) {
                 echo '<a href="profile.php" class="navlinks">Profile</a>';
             } else {
                 echo '<a href="../login_signup/registration.php" class="navlinks">Login / Sign Up</a>';

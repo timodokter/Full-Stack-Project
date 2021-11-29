@@ -14,9 +14,9 @@ $conn = OpenConn();
 
 $all = $conn->query("SELECT * FROM accountinformation");
 
-while($row = $all->fetch()) {
-    echo $row["Email"];
-}
+//while($row = $all->fetch()) {
+//    echo $row["Email"];
+//}
 
 ?>
 <header>
@@ -47,13 +47,11 @@ while($row = $all->fetch()) {
         <div>
             <!--            this php piece checks to see if you are logged in or not-->
             <?php
-
-            if ($_SESSION["LoggedIn"]) {
+            if (isset($_SESSION["LoggedIn"]) && $_SESSION["LoggedIn"]) {
                 echo '<a href="WebPages/account/Profile/profile.php" class="navlinks">Profile</a>';
             } else {
                 echo '<a href="WebPages/account/login_signup/registration.php" class="navlinks">Login / Sign Up</a>';
             }
-
             ?>
         </div>
     </nav>
@@ -94,6 +92,6 @@ while($row = $all->fetch()) {
 </div>
 </body>
 <?php
-CloseConn($conn);
+//CloseConn($conn);
 ?>
 </html>
